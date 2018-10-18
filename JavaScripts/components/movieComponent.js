@@ -1,28 +1,30 @@
-//  [Writing to the dom for the movie component]
+// import { movieDataGetter } from '../data/movieData.js';
 
 const writeMovie = (arrayOfMovie) => {
 	let domString = '';
-
-	domString += `
-      <div class="fish card col-md-6 col-md-offset-3">
-      <div class="thumbnail">
-          <img src="${moive.name}"
-              alt="" width="40%">
-          <div class="caption">
-              <h3 id="thumbnail-label">${movie.genre}</h3>
-              <p>$
-                  <span class="price">${movie.estimated_release_date}</span>
-              </p>
-              <p>$
-              <span class="price">${movie.description}</span>
-          </p>
-          </div>
-          <div class="caption card-footer">
-              <button class="add btn btn-danger">Add To Basket</button>
-          </div>
-      </div>
-  </div>
-      `;
+	arrayOfMovie.forEach((movie) => {
+		domString += `
+    <div class="fish card col-md-6 col-md-offset-3">
+        <div class="thumbnail">
+          <img src="${movie.picture}">
+          <h1>${movie.Name}</h1>
+          <h3>${movie.Genre}</h3>
+          <p>${movie.Estimated_Release_Date}</p>
+          <p>${movie.Description}</p>
+        </div>
+    </div>`;
+	});
+	$('#movie_description').append(domString);
 };
 
-$('#movie_description').append(domString);
+export { writeMovie };
+
+// const movieDataGetter = () => {
+$.get('../db/movie.json')
+	.done((data) => {
+		writeMovie(data.movie);
+	})
+	.fail((error) => {
+		console.error(error);
+	});
+// };

@@ -1,8 +1,7 @@
 //  [AJAX call for movie data]
-
+import { writeMovie } from '../components/movieComponent.js';
 $.get('../db/movie.json')
 	.done((data) => {
-		console.log(data);
 		writeMovie(data.movie);
 	})
 	.fail((error) => {

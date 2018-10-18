@@ -1,7 +1,9 @@
-// [Entry point/start application]
+import { writeMovie } from './components/movieComponent.js';
+import { writeMovie } from './components/locationComponent.js';
 
-// const initializer = () => {
-// 	writeMovie();
-// };
+const initializeApp = () => {
+	writeMovie();
+	writeMovieLocation();
+};
 
-// initializer();
+initializeApp();

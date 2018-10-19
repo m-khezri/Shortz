@@ -1,7 +1,7 @@
 {
 	"movie": [
 		{
-			"picture": "../img/poster.png",
+			"picture": "../img/movie-poster.png",
 			"Name": "The Happy Prince",
 			"Genre": "Comices",
 			"Estimated_Release_Date": "June 15, 2019",

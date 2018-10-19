@@ -4,14 +4,12 @@ const writeMovieLocation = (arrayOfLocations) => {
 	let domString = '';
 	arrayOfLocations.forEach((locations) => {
 		domString += `
-    <div class="d-flex">
-        <div class="card">
-          <img src="${locations.location_image}">
-          <h1>${locations.name}</h1>
-          <h3>${locations.location}</h3>
-          <p>${locations.shoot_time}</p>
-        </div>
-    </div>`;
+    	<div class="card w-25 m-2 p-0" style="min-width: 300px;">
+		  <h6 class="card-header bg-warning text-center">${locations.name}</h6>
+          <img class="mw-100 mh-100" src="${locations.location_image}">
+          <p class="card-body text-center">${locations.location}</p>
+		  <p class="card-footer text-center font-weight-bold">${locations.shoot_time}</p>
+		</div>`;
 	});
 	$('#movie_info').append(domString);
 };

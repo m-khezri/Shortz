@@ -4,15 +4,15 @@ const writeMovie = (arrayOfMovie) => {
 	let domString = '';
 	arrayOfMovie.forEach((movie) => {
 		domString += `
-    <div class="fish card col-md-6 col-md-offset-3">
-        <div class="thumbnail">
-          <img src="${movie.picture}">
-          <h1>${movie.Name}</h1>
-          <h3>${movie.Genre}</h3>
-          <p>${movie.Estimated_Release_Date}</p>
-          <p>${movie.Description}</p>
-        </div>
-    </div>`;
+		<div class="card style= "height: 20vh;">
+			<img class="card-img-top position-absolute mw-100" src="${movie.picture}">
+			<div class="card-img-overlay">			
+			<span class="card-title w-50 m-4 text-light display-4">${movie.Name}</span>
+			<h5 class="card-text- w-25 m-4">Genre: ${movie.Genre}</h6>
+			<p class="card-text w-25 m-4 ">${movie.Description}</p>	
+			<h5 class="card-text w-25 m-4">${movie.Estimated_Release_Date}</h5>
+			</div>
+	    </div>`;
 	});
 	$('#movie_description').append(domString);
 };

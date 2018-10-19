@@ -11,25 +11,30 @@
     <title>Shortz</title>
 </head>
 
-<body>
-   
-    <head class="navbar">
-            <div class="nav-item">
-                <a href="#">Shortz</a>
-                <div class="nav-item">
-                <input type="search" >
-                <div>
-                <button>Morning</button>
-                <button>Afternoon</button>
-                <button>Evening</button>
-                <button>After dark</button>
-                </div>
+<body class="bg-dark">
+
+            <div class = "m-0">
+                <div id="movie_description"></div>
             </div>
-    </head>
 
-    <div id="movie_description"></div>
+        <nav class="navbar navbar-expand-lg bg-dark w-100 shadow sticky-top text-light" style="margin-top: 600px;">
+            
+                    <a class="font-weight-bold display-4 text-danger" href="#">Shortz</a>
+                    <input type="text" placeholder="Search..." class="mx-5 my-2 nav-item form-control" id="search_input">
+    
 
-    <div id="movie_info"></div>
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group mr-2" role="group" aria-label="First group">
+                              <button type="button" class="btn btn-danger" id="morning_btn">Morning</button>
+                              <button type="button" class="btn btn-danger" id="afternoon_btn">Afternoon</button>
+                              <button type="button" class="btn btn-danger" id="evening_btn">Evening</button>
+                              <button type="button" class="btn btn-danger" id="afterdark_btn">After Dark</button>
+                    </div>
+    </nav>
+
+  
+
+    <div class="d-flex flex-wrap mt-5" id="movie_info"></div>
 
 
     <!-- Script Tags -->

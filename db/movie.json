@@ -1,11 +1,11 @@
 {
 	"movie": [
 		{
-			"picture": "https://1645110239.rsc.cdn77.org/image/f330x470/q50/mm/been/movies18476/posters/the-happy-prince.20180928113208.jpg",
+			"picture": "../img/poster.png",
 			"Name": "The Happy Prince",
 			"Genre": "Comices",
 			"Estimated_Release_Date": "June 15, 2019",
-			"Description": "In a town where a lot of poor people suffer and where there are a lot of miseries, a swallow who was left behind after his flock flew off to Egypt for the winter, meets the statue of the late 'Happy Prince,' who in reality has never experienced true sorrow, for he lived in a palace where sorrow was not allowed to enter. Viewing various scenes of people suffering in poverty from his tall monument, the Happy Prince asks the swallow to take the ruby from his hilt, the sapphires from his eyes, and the golden leaf covering his body to give to the poor. As the winter comes and the Happy Prince is stripped of all of his beauty, his lead heart breaks when the swallow dies as a result of his selfless deeds and severe cold. The statue is then brought down from the pillar and melted in a furnace leaving behind the broken heart and the dead swallow, and they are thrown in a dust heap. These are taken up to heaven by an angel that has deemed them the two most precious things in the city. This is affirmed by God and they live forever in his city of gold and garden of paradise."
+			"Description": "In a town where a lot of poor people suffer and where there are a lot of miseries, a swallow who was left behind after his flock flew off to Egypt for the winter, meets the statue of the late 'Happy Prince,' who in reality has never experienced true sorrow, for he lived in a palace where sorrow was not allowed to enter. Viewing various scenes of people suffering in poverty from his tall monument, the Happy Prince asks the swallow to take the ruby from his hilt, the sapphires from his eyes, and the golden leaf covering his body to give to the poor..."
 		}
 	]
 }

@@ -1,5 +1,3 @@
-// import { movieDataGetter } from '../data/movieData.js';
-
 const writeMovieLocation = (arrayOfLocations) => {
 	let domString = '';
 	arrayOfLocations.forEach((locations) => {
@@ -15,13 +13,3 @@ const writeMovieLocation = (arrayOfLocations) => {
 };
 
 export { writeMovieLocation };
-
-// const movieDataGetter = () => {
-$.get('../db/locations.json')
-	.done((data) => {
-		writeMovieLocation(data.locations);
-	})
-	.fail((error) => {
-		console.error(error);
-	});
-// };

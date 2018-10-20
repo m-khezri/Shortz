@@ -1,9 +1,9 @@
-import { writeMovie } from './components/movieComponent.js';
-import { writeMovie } from './components/locationComponent.js';
+import { movie_description } from './data/movieData.js';
+import { movieLocations } from './data/locationsdata.js';
 
 const initializeApp = () => {
-	writeMovie();
-	writeMovieLocation();
+	movie_description();
+	movieLocations();
 };
 
 initializeApp();

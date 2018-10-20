@@ -1,5 +1,3 @@
-// import { movieDataGetter } from '../data/movieData.js';
-
 const writeMovie = (arrayOfMovie) => {
 	let domString = '';
 	arrayOfMovie.forEach((movie) => {
@@ -18,13 +16,3 @@ const writeMovie = (arrayOfMovie) => {
 };
 
 export { writeMovie };
-
-// const movieDataGetter = () => {
-$.get('../db/movie.json')
-	.done((data) => {
-		writeMovie(data.movie);
-	})
-	.fail((error) => {
-		console.error(error);
-	});
-// };

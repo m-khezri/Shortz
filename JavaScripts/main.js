@@ -1,9 +1,12 @@
-import { movie_description } from './data/movieData.js';
-import { movieLocations } from './data/locationsdata.js';
+import { writeMovie } from './data/movieData.js';
+import { writeMovieLocation } from './data/locationsData.js';
+import { searchMovie, filetrCards } from './events.js';
 
 const initializeApp = () => {
-	movie_description();
-	movieLocations();
+	writeMovie();
+	writeMovieLocation();
+	searchMovie();
+	filetrCards();
 };
 
 initializeApp();

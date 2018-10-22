@@ -1,32 +1,29 @@
-// SEARCH 
-const search = () => {
-    $('#search_input').keypress(function() {
-    let searchText = $('#search_input').val();
-    alert('searchText');
-});
+// SEARCH
+
+const searchMovie = () => {
+	$('#search_input').keypress(function() {
+		let searchText = $('#search_input').val();
+		$('.locations').not(`:contains(${searchText}`).hide();
+	});
 };
-
-
-// FILETR CARDS 
 
 const filetrCards = () => {
-
-    $('morning_btn').click(e) => {
-       alert ('This is morning');     
-    })
-
-    $('afternoon_btn').click(e) => {
-        alert ('This is morning');     
-     })
-
-     $('evening_btn').click(e) => {
-        alert ('This is morning');     
-     })
-
-     $('afterdark_btn').click(e) => {
-        alert ('This is morning');     
-     })
-
+	$('body').on('click', '#morning_btn', (e) => {
+		$('.locations').show();
+		$('.locations').not('.Morning').hide();
+	});
+	$('body').on('click', '#afternoon_btn', (e) => {
+		$('.locations').show();
+		$('.locations').not('.Afternoon').hide();
+	});
+	$('body').on('click', '#evening_btn', (e) => {
+		$('.locations').show();
+		$('.locations').not('.Evening').hide();
+	});
+	$('body').on('click', '#afterdark_btn', (e) => {
+		$('.locations').show();
+		$('.locations').not('.After').hide();
+	});
 };
 
-export {search, filetrCards}
+export { searchMovie, filetrCards };

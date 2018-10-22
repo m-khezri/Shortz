@@ -9,20 +9,20 @@ const searchMovie = () => {
 
 const filetrCards = () => {
 	$('body').on('click', '#morning_btn', (e) => {
-		$('.locations').show();
-		$('.locations').not('.Morning').hide();
+		$('#movie_info').show();
+		$('#movie_info').not('#morning_btn').hide();
 	});
 	$('body').on('click', '#afternoon_btn', (e) => {
-		$('.locations').show();
-		$('.locations').not('.Afternoon').hide();
+		$('#movie_info').show();
+		$('#movie_info').not('#afternoon_btn').hide();
 	});
 	$('body').on('click', '#evening_btn', (e) => {
-		$('.locations').show();
-		$('.locations').not('.Evening').hide();
+		$('#movie_info').show();
+		$('#movie_info').not('#evening_btn').hide();
 	});
 	$('body').on('click', '#afterdark_btn', (e) => {
-		$('.locations').show();
-		$('.locations').not('.After').hide();
+		$('#movie_info').show();
+		$('#movie_info').not('#afterdark_btn').hide();
 	});
 };
 

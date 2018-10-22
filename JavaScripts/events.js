@@ -12,6 +12,7 @@ const filetrCards = () => {
 		$('#movie_info').show();
 		$('#movie_info').not('#morning_btn').hide();
 	});
+
 	$('body').on('click', '#afternoon_btn', (e) => {
 		$('#movie_info').show();
 		$('#movie_info').not('#afternoon_btn').hide();

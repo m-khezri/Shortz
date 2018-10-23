@@ -1,4 +1,4 @@
-import {} from '../components/movieComponent.js';
+import { writeMovie } from '../components/movieComponent.js';
 
 const movie_description = () => {
 	$.get('../db/movie.json')

@@ -47,6 +47,14 @@ const filterCards = () => {
 			$(MovieCard).not(':contains("After Dark")').hide();
 		});
 	});
+
+	$('#showall_btn').on('click', (e) => {
+		// console.log(shotTime);
+		$('.movieLoc').each((i, MovieCard) => {
+			// 'each' is looking for in each individual card
+			$(MovieCard).show();
+		});
+	});
 };
 
 export { searchMovie, filterCards };

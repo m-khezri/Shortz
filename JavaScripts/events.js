@@ -3,28 +3,58 @@
 const searchMovie = () => {
 	$('#search_input').keypress(function() {
 		let searchText = $('#search_input').val();
-		$('.locations').not(`:contains(${searchText}`).hide();
+		if ($('.card-header').not(':contains(${searchText}')) {
+			// && $('.card-address').not('${searchText}')) {
+			// $('.movieLoc').hide();
+		}
+		// $('.movieLoc').each(`:contains(${searchText}`).hide();
 	});
 };
 
-const filetrCards = () => {
-	$('body').on('click', '#morning_btn', (e) => {
-		$('#movie_info').show();
-		$('#movie_info').not('#morning_btn').hide();
+const filterCards = () => {
+	$('#morning_btn').on('click', (e) => {
+		// console.log(shotTime);
+		$('.movieLoc').each((i, MovieCard) => {
+			// 'each' is looking for in each individual card
+			$(MovieCard).show();
+			$(MovieCard).not(':contains("Morning")').hide();
+		});
 	});
 
-	$('body').on('click', '#afternoon_btn', (e) => {
-		$('#movie_info').show();
-		$('#movie_info').not('#afternoon_btn').hide();
+	$('#afternoon_btn').on('click', (e) => {
+		// console.log(shotTime);
+		$('.movieLoc').each((i, MovieCard) => {
+			// 'each' is looking for in each individual card
+			$(MovieCard).show();
+			$(MovieCard).not(':contains("Afternoon")').hide();
+		});
 	});
-	$('body').on('click', '#evening_btn', (e) => {
-		$('#movie_info').show();
-		$('#movie_info').not('#evening_btn').hide();
+
+	$('#evening_btn').on('click', (e) => {
+		// console.log(shotTime);
+		$('.movieLoc').each((i, MovieCard) => {
+			// 'each' is looking for in each individual card
+			$(MovieCard).show();
+			$(MovieCard).not(':contains("Evening")').hide();
+		});
 	});
-	$('body').on('click', '#afterdark_btn', (e) => {
-		$('#movie_info').show();
-		$('#movie_info').not('#afterdark_btn').hide();
+
+	$('#afterdark_btn').on('click', (e) => {
+		// console.log(shotTime);
+		$('.movieLoc').each((i, MovieCard) => {
+			// 'each' is looking for in each individual card
+			$(MovieCard).show();
+			$(MovieCard).not(':contains("After Dark")').hide();
+		});
+	});
+
+	$('#showall_btn').on('click', (e) => {
+		// console.log(shotTime);
+		$('.movieLoc').each((i, MovieCard) => {
+			// 'each' is looking for in each individual card
+			$(MovieCard).show();
+		});
 	});
 };
 
-export { searchMovie, filetrCards };
+export { searchMovie, filterCards };

@@ -12,26 +12,21 @@
 </head>
 
 <body class="bg-dark">
-        <div class = "m-0">
-            <div id="movie_description"></div>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-dark w-100 shadow sticky-top text-light">
+            <a class="font-weight-bold display-4 text-danger" href="#">Shotz</a>
+            <input type="text" placeholder="Search..." class="mx-5 my-2 nav-item form-control" id="search_input">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-danger" id="morning_btn">Morning</button>
+                  <button type="button" class="btn btn-danger" id="afternoon_btn">Afternoon</button>
+                  <button type="button" class="btn btn-danger" id="evening_btn">Evening</button>
+                  <button type="button" class="btn btn-danger" id="afterdark_btn">After Dark</button>
+                  <button type="button" class="btn btn-danger" id="showall_btn">Show All</button>
+                </div>
+         </nav>
 
-        <nav class="navbar navbar-expand-lg bg-dark w-100 shadow sticky-top text-light" style="margin-top: 600px;">
-            
-                    <a class="font-weight-bold display-4 text-danger" href="#">Shotz</a>
-                    <input type="text" placeholder="Search..." class="mx-5 my-2 nav-item form-control" id="search_input">
-                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                            <div class="btn-group mr-2" role="group" aria-label="First group">
-                              <button type="button" class="btn btn-danger" id="morning_btn">Morning</button>
-                              <button type="button" class="btn btn-danger" id="afternoon_btn">Afternoon</button>
-                              <button type="button" class="btn btn-danger" id="evening_btn">Evening</button>
-                              <button type="button" class="btn btn-danger" id="afterdark_btn">After Dark</button>
-                              <button type="button" class="btn btn-danger" id="showall_btn">Show All</button>
-
-                    </div>
-    </nav>
-
-    <div class="movieLocations d-flex flex-wrap m-5 justify-content-center" id="movie_info"></div>
+    <div class = "d-flex flex-wrap m-0 p-5 justify-content-center bg-info " id="movie_description"></div> <!-- Print Movies  -->
+    <div class="movieLocations d-flex flex-wrap m-5 justify-content-center" id="movie_info"></div>  <!-- locations  -->
 
     <!-- Script Tags -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

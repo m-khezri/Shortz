@@ -1,7 +1,7 @@
 const writeMovie = (arrayOfMovie) => {
-	let domString = '';
-	arrayOfMovie.forEach((movie) => {
-		domString += `
+  let domString = '';
+  arrayOfMovie.forEach((movie) => {
+    domString += `
         <div class="card w-25 m-1 p-0" style="min-width: 400px;">
           <img class="card-img-top" style="width: 10rem" src="${movie.picture}">
               <div class="card-body"> 
@@ -12,8 +12,8 @@ const writeMovie = (arrayOfMovie) => {
               </div>
           <h5 class="card-footer m-1">${movie.Estimated_Release_Date}</h5>
           </div>`;
-	});
-	$('#movie_description').append(domString);
+  });
+  $('#movie_description').append(domString);
 };
 
 export { writeMovie };

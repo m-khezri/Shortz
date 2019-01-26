@@ -2,7 +2,7 @@ const writeMovie = (arrayOfMovie) => {
   let domString = '';
   arrayOfMovie.forEach((movie) => {
     domString += `
-        <div class="card w-25 m-1 p-0" style="min-width: 400px;">
+        <div class="card w-25 m-1 p-0">
           <img class="card-img-top" style="width: 10rem" src="${movie.picture}">
               <div class="card-body"> 
               <h1 class="card-title m-1 text-danger">${movie.Name}</h1>

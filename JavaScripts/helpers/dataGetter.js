@@ -15,6 +15,7 @@ const getMoviesFromDb = () => new Promise((resolve, reject) =>
             const newMovie = allMovieObject[movieId];
             newMovie.id = movieId;
             allPlayerArray.push(newMovie);
+            console.log(allMovieArray);
           });
         }
         resolve(allMovieArray);

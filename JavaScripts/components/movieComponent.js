@@ -16,4 +16,15 @@ const writeMovie = (arrayOfMovie) => {
   $('#movie_description').append(domString);
 };
 
-export { writeMovie };
+const singleCard = () => {
+
+  $('.card').on('click', (e) => {
+    alert('card clicked');
+  });
+};
+
+
+export {
+  writeMovie,
+  singleCard
+};

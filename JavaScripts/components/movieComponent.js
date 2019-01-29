@@ -16,10 +16,12 @@ const writeMovie = (arrayOfMovie) => {
   $('#movie_description').append(domString);
 };
 
+
+
 const singleCard = () => {
 
-  $('.card').on('click', (e) => {
-    alert('card clicked');
+  $('.card-body').on('click', (e) => {
+    console.log('card clicked');
   });
 };
 

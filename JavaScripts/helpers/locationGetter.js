@@ -1,5 +1,5 @@
 import axios from 'axios';
-import apiKeys from '../../db/apiKeys';
+import apiKeys from '../../db/apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
@@ -17,8 +17,7 @@ const loadLocations = () => new Promise((resolve, reject) =>
         });
       }
       resolve(allLocationArray);
-    })
-    .catch((err) => {
+    }).catch((err) => {
       reject(err);
     })
 );

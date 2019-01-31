@@ -1,6 +1,5 @@
 import 'bootstrap';
 import $ from 'jquery';
-
 import loadLocations from '../helpers/locationGetter';
 
 const writeLocations = (arrayOfLocations) => {

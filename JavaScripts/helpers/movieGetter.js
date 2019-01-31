@@ -1,5 +1,5 @@
 import axios from 'axios';
-import apiKeys from '../../db/apiKeys';
+import apiKeys from '../../db/apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
@@ -17,8 +17,7 @@ const loadMovie = () => new Promise((resolve, reject) =>
         });
       }
       resolve(allMovieArray);
-    })
-    .catch((err) => {
+    }).catch((err) => {
       reject(err);
     })
 );

@@ -1,3 +1,7 @@
+import 'bootstrap';
+import $ from 'jquery';
+import loadMovie from '../helpers/movieGetter';
+
 const writeMovie = (arrayOfMovie) => {
   let domString = '';
   arrayOfMovie.forEach((movie) => {
@@ -17,16 +21,12 @@ const writeMovie = (arrayOfMovie) => {
 };
 
 
-
-const singleCard = () => {
-
-  $('.card-body').on('click', (e) => {
-    console.log('card clicked');
+const getMovie = () => {
+  loadMovie().then((data) => {
+    writeMovie(data);
+  }).catch((error) => {
+    console.error(error);
   });
 };
 
-
-export {
-  writeMovie,
-  singleCard
-};
+export default getMovie;

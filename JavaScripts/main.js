@@ -1,12 +1,13 @@
-import { movie_description } from './data/movieData.js';
-import { movieLocations } from './data/locationsData.js';
+import firebase from 'firebase';
+import apiKeys from '../db/apiKeys.json';
+import getMovie from '../JavaScripts/components/movieComponent';
+import getLocations from '../JavaScripts/components/movieComponent';
 import { searchMovie, filterCards } from './events.js';
-import { singleCard } from './components/movieComponent.js';
 
 const initializeApp = () => {
-  movie_description();
-  movieLocations();
-  singleCard();
+  firebase.initializeApp(apiKeys.firebaseKeys);
+  getMovie();
+  getLocations();
   searchMovie();
   filterCards();
 };

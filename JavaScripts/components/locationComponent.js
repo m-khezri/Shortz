@@ -1,4 +1,9 @@
-const writeMovieLocation = (arrayOfLocations) => {
+import 'bootstrap';
+import $ from 'jquery';
+
+import loadLocations from '../helpers/locationGetter';
+
+const writeLocations = (arrayOfLocations) => {
   let domString = '';
   arrayOfLocations.forEach((locations) => {
     domString += `
@@ -12,5 +17,13 @@ const writeMovieLocation = (arrayOfLocations) => {
   $('#movie_info').append(domString);
 };
 
-export { writeMovieLocation };
+const getLocations = () => {
+  loadLocations().then((data) => {
+    writeLocations(data);
+  }).catch((error) => {
+    console.error(error);
+  });
+};
+
+export { getLocations };
 

@@ -14,4 +14,4 @@
     "no-console": [1, { "allow": ["error"] }],
     "no-debugger": 1
   }
-} 
+}

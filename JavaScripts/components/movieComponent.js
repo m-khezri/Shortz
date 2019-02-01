@@ -24,6 +24,7 @@ const writeMovie = (arrayOfMovie) => {
 const getMovie = () => {
   loadMovie().then((data) => {
     writeMovie(data);
+    console.log(data);
   }).catch((error) => {
     console.error(error);
   });
